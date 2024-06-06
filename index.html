@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/jass.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> >
+</head>
+
+<body>
+    <main class="container">
+        <section class="content blog-post">
+            <h2>Blog Post</h2>
+            <p>Welcome to the Dynamic Blog Spot. Please feel free to share what is on your mind today.</p>
+        </section>
+        <section class="content form-container">
+            <h2>Create a Blog Post</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="blog-title">Blog Title:</label>
+                <input type="text" id="blog-title" name="blog-title" required>
+                <label for="blog-content">Blog Content:</label>
+                <textarea id="blog-content" name="blog-content" rows="5" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <script src=".blog.js"></script>
+    <script src=".form.js"></script>
+    <script src=".logic.js"></script>
+</body>
+</html>
