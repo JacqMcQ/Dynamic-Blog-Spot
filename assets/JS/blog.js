@@ -1,20 +1,20 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    const postsHist = document.getElementById("blog-posts"); 
-    const localPosts = JSON.parse(localStorage.getItem("post-array")) || []; 
-    console.log(localPosts);
-    for (let i = 0; i < localPosts.length; i++) { 
-        const postEl = document.createElement("div");
-        postEl.classList.add("formData");
-        postEl.innerHTML = `
-            <h2>${localPosts[i].username}</h2>
-            <p>${localPosts[i].title}</p>
-            <p>${localPosts[i].content}</p>
-        `;
-        postsHist.appendChild(postEl); 
-    }
-});
+    const postsEl =  document.getElementById('formData');
+    const storedPostsEl= JSON.parse(localStorage.getItem('formData')) || [];
 
+for (let i = 0; i < storedPostsEl.length; i++) {
+    const postData = storedPostsEl[i];
+    const postElement = document.createElement('div');
+    postElement.className = 'formData';
+    postElement.innerHTML = `
+        <h2>${postData.title}</h2>
+        <p>Username: ${postData.username}</p>
+        <p>Blog Post: ${postData.content}</p>
+    `;
+    postsEl.appendChild(postElement);
+}
+
+});
 document.getElementById("back").addEventListener("click", function() {
     window.history.back();
 });

@@ -3,28 +3,23 @@ const form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const usernameInput = document.getElementById('username');
-    const titleInput = document.getElementById('blog-title');
-    const contentInput = document.getElementById('blog-content');
+    const username = document.getElementById('username').value;
+    const title = document.getElementById('blog-title').value;
+    const content = document.getElementById('blog-content').value;
 
-    const formData = {
-        username: usernameInput.value,
-        title: titleInput.value,
-        content: contentInput.value
-    };     
+    if (username === '' || title === '' || content === '') {
+        event.preventDefault();
+        // Handle form validation here (e.g., show an error message)
+    } else {
+        let formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
+        const formData = {
+            username: username,
+            title: title,
+            content: content
+        };
+        formDataArray.push(formData);
+        localStorage.setItem('formData', JSON.stringify(formDataArray));
 
-const postArray = [];
-const formJSON = JSON.stringify(formData);
-postArray.push(formJSON);
-localStorage.setItem('post-array',postArray);
-localStorage.setItem('test',JSON.stringify(formData));
-window.location.href = 'blog.html';
-});
-
-window.addEventListener('popstate', function(event) {
-    if(window.location.href.endsWith('blog.html')) {
-    console.log('Navigating to blog.html');
-    
-}
-
+        window.location.href = 'blog.html';
+    }
 });

@@ -15,18 +15,10 @@ body {
     padding: 20px;
 }
 
-.dark-mode {
-    background-color: #4206ce;
-    color: #f2f533;
-}
-
-.light-mode {
-    background-color: #f2f533;
-    color: #4206ce;
-}
 
 /* Header styles */
 header {
+    background-color: #e57ee9;
     text-align: center;
     padding: 20px 0;
 }
@@ -35,6 +27,16 @@ header h1 {
     font-size: 24px;
 }
 
+/*Magic Button*/
+#mode {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
 /* Back button styles */
 #backbutton {
     text-align: right;
@@ -57,16 +59,15 @@ header h1 {
 
 /* Blog posts styles */
 #blog-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    
 }
 
 .post {
-    background-color: #444;
+    background-color: #5412ac;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(28, 14, 155, 0.1);
 }
 
 .post h2 {
