@@ -13,8 +13,11 @@ form.addEventListener('submit', function(event) {
         content: contentInput.value
     };     
 
-localStorage.setItem('formData', JSON.stringify(formData));
-console.log(formData);
+const postArray = [];
+const formJSON = JSON.stringify(formData);
+postArray.push(formJSON);
+localStorage.setItem('post-array',postArray);
+localStorage.setItem('test',JSON.stringify(formData));
 window.location.href = 'blog.html';
 });
 

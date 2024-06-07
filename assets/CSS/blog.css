@@ -20,7 +20,7 @@ body {
     color: #f2f533;
 }
 
-.light {
+.light-mode {
     background-color: #f2f533;
     color: #4206ce;
 }
@@ -52,7 +52,7 @@ header h1 {
 }
 
 #back:hover {
-    background-color: #0056b3;
+    background-color: #791c1c;
 }
 
 /* Blog posts styles */
