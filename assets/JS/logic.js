@@ -1,15 +1,19 @@
-const modeSwitcher = document.querySelector('#darkmode');
+const themeSwitcher = document.querySelector('#theme-switcher');
+const container = document.querySelector('.container');
 
-let mode = 'light'; 
+// Set default mode to dark
+let mode = 'light';
 
-modeSwitcher.addEventListener('click', function () {
-    
-    if (mode === 'light') {
-        mode = 'dark';
-    } else {
-        mode = 'light';
-    }
-
-    document.body.classList.toggle('light');
-    document.body.classList.toggle('dark');
+// Listen for a click event on toggle switch
+themeSwitcher.addEventListener('click', function () {
+  // If mode is dark, apply light background
+  if (mode === 'light') {
+    mode = 'dark';
+    container.setAttribute('class', 'dark');
+  }
+  // If mode is light, apply dark background
+  else {
+    mode = 'light';
+    container.setAttribute('class', 'light');
+  }
 });

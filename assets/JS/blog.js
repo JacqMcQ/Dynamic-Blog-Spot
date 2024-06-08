@@ -15,6 +15,7 @@ for (let i = 0; i < storedPostsEl.length; i++) {
 }
 
 });
+
 document.getElementById("back").addEventListener("click", function() {
     window.history.back();
 });

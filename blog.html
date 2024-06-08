@@ -4,23 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of Blogs</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
+  
 </head>
-
 <body class="container">
+    <section id="backbutton">
+        <button id="back">Back</button> 
+    </section>
+    <div class="row toggle">
+        <div class="col">
+          <p>DARK MODE</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>LIGHT MODE</p>
+        </div>
+      </div>
     <header>
         <h1>List of Blogs</h1>
-        <div class="light-mode">
-        <button class='mode' id='lightmode'> Magic </button>
-        </div>
-        <div id="backbutton">
-        <button id="back">Back</button>
-        </div>
-    </header>
+    </header>    
     <main id="main-container">
         <section class="section" id="formData">
         </section>
     </main>
     <script type="text/javascript" src="/assets/JS/blog.js" ></script>
+    <script type="text/javascript" src="/assets/JS/logic.js" ></script>
 </body>
 
 

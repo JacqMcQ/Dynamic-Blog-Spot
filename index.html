@@ -6,11 +6,22 @@
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> 
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/blog.css" />
 
 </head>
 
 <body>
+    <div class="row toggle">
+        <div class="col">
+          <p>LIGHT MODE</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>DARK MODE</p>
+        </div>
+        </div>
     <main class="container">
         <section class="content blog-post">
             <h2>Blog Post</h2>
@@ -31,5 +42,6 @@
     </main>
     <a href="blog.html"></a>
     <script type="text/javascript" src="/assets/JS/form.js" ></script>
+    <script type="text/javascript" src="/assets/JS/logic.js" ></script>
 </body>
 </html>
