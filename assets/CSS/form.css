@@ -1,24 +1,34 @@
-
-
 p {
-    color: #070202; 
+    color: #070202;
     font-weight: bolder;
     font-size: larger;
 }
 
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+}
 
 input[type="text"],
 textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #0f1105; 
+    border: 1px solid #0f1105;
     border-radius: 5px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #ceb153; 
+    background-color: #ceb153;
     text-transform: uppercase;
     font-weight: bold;
     color: #0a0101;
@@ -28,64 +38,61 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #3a08c2;
-    color: white; 
-}
 .toggle {
     border-style: outset;
     width: 400px;
     background-color: rgba(76, 175, 80, 0.15)
-  }
-  
-  .light {
+}
+
+.light {
     background-color: #f0ead6;
     color: black;
     height: 100vh;
-  }
-  
-  .light li a {
+}
+
+.light li a {
     color: black;
-  }
-  
-  .light li a:hover {
+}
+
+.light li a:hover {
     background-color: rgb(29, 128, 210);
-  }
-  .dark {
-    background-color:#243447;
+}
+
+.dark {
+    background-color: #243447;
     color: white;
     height: 100vh;
     color: #bebebe
-   
-  }
-  
-  .dark li a {
+}
+
+.dark li a {
     color: #bebebe;
-  }
-  
-  .dark li a:hover {
+}
+
+.dark li a:hover {
     background-color: #111;
-  }
-  
-  .switch {
+}
+
+.switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  .switch input {
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  .switch input {
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -95,9 +102,9 @@ button:hover {
     background-color: #111;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -107,38 +114,39 @@ button:hover {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: rgb(29, 128, 210);
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px rgb(29, 128, 210);
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  input:focus + .slider:before {
+}
+
+input:focus+.slider:before {
     box-shadow: 0 0 1px rgb(29, 128, 210);
-  }
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
-  .row {
+}
+
+.row {
     margin: 20px;
     display: flex;
-  }
-  .col {
+}
+
+.col {
     margin: 20px;
-  }
-  
+}
