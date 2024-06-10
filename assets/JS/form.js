@@ -1,4 +1,6 @@
 const form = document.getElementById('form');
+const errorMessage = document.createElement('div');
+errorMessage.style.color = 'red';
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -9,7 +11,7 @@ form.addEventListener('submit', function(event) {
 
     if (username === '' || title === '' || content === '') {
         event.preventDefault();
-        // Handle form validation here (e.g., show an error message)
+
     } else {
         let formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
         const formData = {

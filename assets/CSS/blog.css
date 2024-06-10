@@ -88,7 +88,7 @@ header h1 {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #4a3c50;
+    background-color: #907b92;
 }
 
 #blog-image-container {
@@ -141,7 +141,24 @@ header h1 {
     margin-bottom: 20px; 
 }
 
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
 
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 
 
