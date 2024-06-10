@@ -1,6 +1,6 @@
 :root {
-    --text-color-light: #866ebe;
-    --text-color-dark: #fff;
+    --text-color-light: hsl(258, 62%, 57%);
+ 
 }
 
 header {
@@ -151,11 +151,5 @@ input:focus+.slider:before {
 @media (prefers-color-scheme: light) {
     .formData {
         color: var(--text-color-light);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .formData {
-        color: var(--text-color-dark);
     }
 }
