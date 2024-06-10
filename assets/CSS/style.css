@@ -11,33 +11,33 @@ body {
 }
 
 .container {
-    width: 100%;   
+    width: 100%;
     margin: 20px;
     padding: 20px;
 }
 
 .content-blog-post {
     max-width: 800px;
-    margin-left:20px; 
+    margin-left: 20px;
     text-align: center;
-    padding: 20px; 
-    color: var(--cool-dark)
+    padding: 20px;
+    color: var(--cool-dark);
     border-radius: 50%;
     box-sizing: border-box;
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom, var(--cool-purple), var(--cool-yellow));
-    border-image-slice: 1;  
-  
+    border-image-slice: 1;
+
 }
 
 .content-form-container {
     max-width: 800px;
-    margin-top:20px;
-    margin-left: 20px; 
+    margin-top: 20px;
+    margin-left: 20px;
     text-align: left;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
-    padding: 20px; 
+    padding: 20px;
     border: 5px solid var(--cool-purple);
     box-sizing: border-box;
     color: var(--cool-dark)
@@ -55,6 +55,7 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
 button {
     background-color: var(--cool-dark);
     text-transform: uppercase;
@@ -64,7 +65,7 @@ button {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 button:hover {
@@ -74,7 +75,7 @@ button:hover {
 input[type="text"]:not(:placeholder-shown),
 textarea:not(:placeholder-shown) {
     background-color: #a7d4ee;
-    width: 400px; 
+    width: 400px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;

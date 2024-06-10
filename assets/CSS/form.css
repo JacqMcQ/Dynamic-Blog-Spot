@@ -1,7 +1,7 @@
 :root {
-    --text-color-light: #866ebe; 
-    --text-color-dark: #fff; 
-  }
+    --text-color-light: #866ebe;
+    --text-color-dark: #fff;
+}
 
 header {
     border-bottom: 2px solid #ccc;
@@ -150,12 +150,12 @@ input:focus+.slider:before {
 
 @media (prefers-color-scheme: light) {
     .formData {
-      color: var(--text-color-light); 
+        color: var(--text-color-light);
     }
-  }
+}
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     .formData {
-      color: var(--text-color-dark); 
+        color: var(--text-color-dark);
     }
-  }
+}

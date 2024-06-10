@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-purple: #1c082c;
 }
 
@@ -84,6 +84,7 @@ header h1 {
     }
 
 }
+
 .my-blogs {
     max-width: 800px;
     margin: 0 auto;
@@ -104,7 +105,7 @@ header h1 {
 
     to {
         transform: translateX(0);
-     opacity: 1;
+        opacity: 1;
     }
 }
 
@@ -126,7 +127,7 @@ header h1 {
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(5deg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color:#39b3d8;
+    color: #39b3d8;
 }
 
 #back {
@@ -138,7 +139,7 @@ header h1 {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 footer {
@@ -159,9 +160,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-

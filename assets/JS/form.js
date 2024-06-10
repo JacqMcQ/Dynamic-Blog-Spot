@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const errorMessage = document.createElement('div');
 errorMessage.style.color = 'red';
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const username = document.getElementById('username').value;
