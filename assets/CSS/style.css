@@ -34,8 +34,6 @@ body {
     border-radius: 50%;
     box-sizing: border-box;
     border: 10px solid transparent;
-    border-image: linear-gradient(to bottom, var(--cool-purple), var(--cool-yellow));
-    border-image-slice: 1;
 
 }
 
