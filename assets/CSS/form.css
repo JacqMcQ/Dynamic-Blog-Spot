@@ -1,3 +1,8 @@
+:root {
+    --text-color-light: #866ebe; 
+    --text-color-dark: #fff; 
+  }
+
 header {
     border-bottom: 2px solid #ccc;
 }
@@ -9,17 +14,16 @@ header {
 }
 
 .content-blog-post {
-    width: 80%;
+    width: 100%;
     margin-left: 20PX;
     border: 5px solid #0f1105;
-    border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .switch {
     display: flex;
-    align-items: center;
+    justify-content: left;
 }
 
 .slider {
@@ -40,17 +44,6 @@ textarea {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #ceb153;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #0a0101;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 .toggle {
     border-style: outset;
     width: 400px;
@@ -58,7 +51,7 @@ button {
 }
 
 .light {
-    background-color: #f0ead6;
+    background-color: #9898b9;
     color: black;
     height: 100vh;
 }
@@ -154,3 +147,15 @@ input:focus+.slider:before {
     margin: 20px;
     padding: 15px;
 }
+
+@media (prefers-color-scheme: light) {
+    .formData {
+      color: var(--text-color-light); 
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .formData {
+      color: var(--text-color-dark); 
+    }
+  }
