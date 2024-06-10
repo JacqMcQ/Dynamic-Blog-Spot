@@ -10,6 +10,15 @@ body {
     padding: 0;
 }
 
+.row {
+    margin: 20px;
+    display: flex;
+}
+
+.col {
+    margin: 20px;
+    padding: 15px;
+}
 .container {
     width: 100%;
     margin: 20px;
