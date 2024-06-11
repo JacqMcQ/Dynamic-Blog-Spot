@@ -19,7 +19,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 500;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,7 +66,9 @@ header h1 {
     font-size: 35px;
     font-weight: bolder;
     color: var(--main-purple);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 400;
+    font-style: normal;
     margin-bottom: 20px;
 }
 
